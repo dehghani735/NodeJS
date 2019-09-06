@@ -1,0 +1,19 @@
+{
+  "name": "03basics",
+  "version": "1.0.0",
+  "description": "MDT learns node.js",
+  "main": "app.js",
+  "scripts": {
+    "test": "test",
+    "start": "node app.js",
+    "start-server": "node app.js"
+  },
+  "keywords": [
+    "node.js"
+  ],
+  "author": "MDT",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.19.2"
+  }
+}
