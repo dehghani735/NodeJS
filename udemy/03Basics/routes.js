@@ -13,6 +13,7 @@ const requestHandler = (req, res) => {
         res.write('</html>');
         return res.end(); // for not to continue
     }
+    
     if (url === '/message' && method === 'POST') {
         const body = [];
         // the data event listener will be fired whenever a new chunk is ready to be read
