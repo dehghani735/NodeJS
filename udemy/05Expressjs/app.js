@@ -11,6 +11,10 @@ app.use(bodyParser.urlencoded({extended: false})); // if this is not here, we ge
 app.use(adminRoutes); 
 app.use(shopRoutes);
 
+app.use((req, res, next) => {
+    res.status(404).send('<h1>Page not found</h1>');
+});
+
 // note: Express.js doesn't send a default response or anything like that
 
 // const server = http.createServer(app);
