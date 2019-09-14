@@ -8,7 +8,7 @@ const shopRoutes = require('./routes/shop');
 app.use(bodyParser.urlencoded({extended: false})); // if this is not here, we get undefined in req.body
 
 // the order is important
-app.use(adminRoutes); 
+app.use('/admin', adminRoutes); 
 app.use(shopRoutes);
 
 app.use((req, res, next) => {
