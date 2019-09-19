@@ -8,6 +8,8 @@ const adminRoutes = require('./routes/admin');
 const shopRoutes = require('./routes/shop');
 // this function calls next function at the end automatically (so next middlewares will execute)
 app.use(bodyParser.urlencoded({ extended: false })); // if this is not here, we get undefined in req.body
+app.use(express.static(path.join(__dirname, 'public'))); // has read access to this folder
+//note: epxress will automatically route the requests that are looking for a file to this path, so we should omit the 'public' in link tag
 
 // the order is important
 app.use('/admin', adminRoutes);
