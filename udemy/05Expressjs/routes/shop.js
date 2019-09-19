@@ -11,6 +11,6 @@ router.get('/', (req, res, next) => {
     // res.sendFile('./views/shop.html');
     // res.send('<h1>Hello from Express!</h1>');
     // next();
-}); 
+});
 
 module.exports = router;
